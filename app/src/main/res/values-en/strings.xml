@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turismo_Arboletes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hoteles">Hotels</string>
+    <string name="title_activity_bares">Bars</string>
+    <string name="title_activity_aboutus">About Us</string>
+    <string name="title_activity_sitios">Places</string>
+    <string name="title_activity_demografia">Demography</string>
+    <string name="main">Main</string>
+    <string name="aboutus">Application for show some Arboletes places. Development by Sebastián Alarcón Ortega</string>
+    <string-array name="hoteles_array">
+        <item>Hotel Boutique el Mirador</item>
+        <item>Organización Hotelera mi Remanso</item>
+        <item>Finca Hotel el Retiro</item>
+    </string-array>
+
+    <string-array name="bares_array">
+        <item>Punto Cervercero la 70</item>
+        <item>Heladería la Estrella Real</item>
+        <item>Restaurante Guido</item>
+    </string-array>
+
+    <string-array name="sitios_array">
+        <item>Volcán de lodo</item>
+        <item>Iglesia parroquial de la Inmaculada Concepción</item>
+        <item>Balneario las tinas</item>
+    </string-array>
+
+      <string name="demografia">
+        Population : 40 147 \n
+        Urban population : 16 870 \n
+        Rural Population : 23 277 \n
+        Literacy: 77.1 \%% \n
+        District : 81.3 \%% \n
+        Rural : 74.2 \%% \n
+    </string>
+
+    <string name="hotel3">
+        Caribbean beachfront 5 minutes from the town , 15 minutes from the mud volcano , 50 minutes from Monteria. Providing services : Accommodation in rooms for up to 32 people in multiple accommodation with air conditioning , camping by the sea , restaurant , swimming pool , kiosks event hammocks , green areas , private parking , internet. Ideal for a pleasant rest and contemplative space.
+    </string>
+
+    <string name="hotel1">
+        Beachfront , providing services : Restaurant with specialty fish and seafood - Wireless Internet - Disco Bar - Rumba Beach - Wi fi - Jacuzzi - Rooms with fan, air conditioning and private bath - Safety deposit boxes - Tents on the beach - parking - Attention of social and business events - Guidance on tours - 10 minutes of the mud volcano .
+    </string>
+
+    <string name="hotel2">
+        Beachfront , offers services : Rooms double and multiple accommodation in cabins with beds and fan, private bathroom , tv - Restaurant with varied diet - internet - parking ( cars, jeeps , vans , motorcycles ) - Volly beach - Tours.
+    </string>
+
+     <string name="sitio1">
+        15 minutes from the county seat and the seashore. Mud density allows people to float and swim on the surface. This place is visited by tourists from around the world and is recognized for its medicinal benefits .
+    </string>
+
+    <string name="sitio2">
+        find a cave which is a stone ornament in ancient Jerusalem used to place religious images , also we found a baptismal font also known as baptistery , with a work of art made ​​of sea shells depicting the baptism of Jesus Christ and the Jordan River made by the late Mr. Hector hotel owner Lighthouse by order of the then pastor Gilberto León Franco ; a source is composed of a closed circuit.
+    </string>
+
+    <string name="sitio3">
+        Just 4 km from the county seat via San Juan de Urabá , is a resort of natural pools just 150mts away from the beach, with crystal clear and excellent vegetation waters , making it an estuary and a place to visit and appreciate nature in all its glory without human intervention .
+    </string>
+
+    <string name="bar1">
+        Place to take a few good drinks and have a good time.
+    </string>
+
+    <string name="bar2">
+        Delicious ice cream for hot it is on the beaches of Arboletes.
+    </string>
+
+    <string name="bar3">
+        With scrumptious food served at this beautiful restaurant located very close to the beach Arboletes.
+    </string>
+</resources>

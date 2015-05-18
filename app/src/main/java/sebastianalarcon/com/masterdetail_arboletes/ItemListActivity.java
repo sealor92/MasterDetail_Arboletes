@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
+import sebastianalarcon.com.masterdetail_arboletes.dummy.DummyContent;
+
 
 /**
  * An activity representing a list of Items. This activity
@@ -34,6 +36,14 @@ public class ItemListActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
+
+        if (DummyContent.ITEMS.isEmpty()) {
+            DummyContent.addItem(new DummyContent.DummyItem("1", getResources().getString(R.string.title_activity_aboutus)));
+            DummyContent.addItem(new DummyContent.DummyItem("2", getResources().getString(R.string.title_activity_demografia)));
+            DummyContent.addItem(new DummyContent.DummyItem("3", getResources().getString(R.string.title_activity_bares)));
+            DummyContent.addItem(new DummyContent.DummyItem("4", getResources().getString(R.string.title_activity_sitios)));
+            DummyContent.addItem(new DummyContent.DummyItem("5", getResources().getString(R.string.title_activity_hoteles)));
+        }
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the

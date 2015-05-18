@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turismo_Arboletes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hoteles">Hoteles</string>
+    <string name="title_activity_bares">Bares</string>
+    <string name="title_activity_aboutus">Acerca de nosotros</string>
+    <string name="title_activity_sitios">Sitios</string>
+    <string name="title_activity_demografia">Demografia</string>
+    <string name="main">Principal</string>
+    <string name="aboutus">Aplicación para mostrar algunos lugares de Arbolestes. Desarrollada por Sebastián Alarcón Ortega</string>
+    <string-array name="hoteles_array">
+        <item>Hotel Boutique el Mirador</item>
+        <item>Organización Hotelera mi Remanso</item>
+        <item>Finca Hotel el Retiro</item>
+    </string-array>
+
+    <string-array name="bares_array">
+        <item>Punto Cervercero la 70</item>
+        <item>Heladería la Estrella Real</item>
+        <item>Restaurante Guido</item>
+    </string-array>
+
+    <string-array name="sitios_array">
+        <item>Volcán de lodo</item>
+        <item>Iglesia parroquial de la Inmaculada Concepción</item>
+        <item>Balneario las tinas</item>
+    </string-array>
+
+    <string name="demografia">
+        Población: 40 147 hab.\n
+        Población Urbana: 16 870\n
+        Población Rural: 23 277\n
+        Alfabetismo: 77.1\%%\n
+        Zona urbana: 81.3\%%\n
+        Zona rural: 74.2\%%\n
+    </string>
+
+    <string name="hotel1">
+        Frente a la playa, presta los servicios: Restaurante con especialidad pescados y mariscos – Bar discoteca – Rumba en la playa – Wi fi – Jacuzzi – Habitaciones con ventilador, aire acondicionado y Baño privado – Cajillas de seguridad - Carpas en la playa - Internet inalámbrico - Parqueadero - Atención de eventos sociales y empresariales – Guianza en los tours - A 10 minutos del volcán de lodo..
+    </string>
+
+    <string name="hotel2">
+        Frente a la playa, ofrece los servicios: Habitaciones en acomodación doble y múltiple en camas y camarotes con ventilador, baño privado, tv – Restaurante con alimentación variada – internet – parqueadero (autos, camperos, busetas, motos) – Volly playa – Tours.
+    </string>
+
+    <string name="hotel3">
+        Frente al mar Caribe a 5 minutos de la población, a 15 minutos del volcán de lodo, a 50 minutos de Montería. Presta los servicios: Alojamiento en habitaciones con capacidad para 32 personas en acomodación múltiples con aire acondicionado, camping a orillas del mar, restaurante, piscina, kioscos para eventos, hamacas, amplias zonas verdes, parqueadero privado, internet. Espacio ideal para un descanso placentero y contemplativo.
+    </string>
+
+    <string name="sitio1">
+         a 15 minutos de la cabecera municipal y a la orilla del mar. La densidad del lodo permite que la gente flote y nade en la superficie. Este lugar es visitado por turistas de todo el mundo y es reconocido por sus bondades medicinales.
+    </string>
+
+    <string name="sitio2">
+        encontramos una gruta que es un adorno de piedra utilizado en la antigua Jerusalén para colocar imágenes religiosas, igualmente encontramos una pila bautismal también conocida como bautisterio, con una obra de arte realizada en conchas de mar que representa el bautismo de Jesucristo e el rio Jordán realizada por el fallecido señor Héctor propietario del hotel el Faro por orden del entonces párroco Gilberto León Franco; es una fuente compuesta por un circuito cerrado.
+    </string>
+
+    <string name="sitio3">
+        Ubicado a solo 4 km de la cabecera municipal vía San Juan de Urabá, es un balneario de piscinas naturales a solo 150mts de distancia de la playa, con aguas cristalinas y excelente vegetación, lo que lo convierte en un estuario y un sitio para visitar y apreciar la naturaleza en todo su esplendor sin intervención del ser humano.
+    </string>
+
+    <string name="bar1">
+         Lugar en donde tomarse unos buenos tragos y pasar un buen rato.
+    </string>
+
+    <string name="bar2">
+        Helados deliciosos para el calor que hace en las playas de arboletes.
+    </string>
+
+    <string name="bar3">
+         Para chuparse los dedos con la comida que se sirve en este hermoso restaurante ubicado muy cerca a la playa de arboletes.
+    </string>
+</resources>

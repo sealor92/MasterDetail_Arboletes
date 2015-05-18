@@ -2,6 +2,8 @@ package sebastianalarcon.com.masterdetail_arboletes;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,9 +54,30 @@ public class ItemDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_item_detail, container, false);
 
+        FragmentManager fragmentmanager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentmanager.beginTransaction();
+
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.content);
+            if (mItem.item_name.equals(getResources().getString(R.string.main))){
+                main fragmentmain = new main();
+                fragmentTransaction.replace(android.R.id.content,fragmentmain).commit();
+            }else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_hoteles))){
+                hotel fragmenthotel = new hotel();
+                fragmentTransaction.replace(android.R.id.content,fragmenthotel).commit();
+            }else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_bares))){
+                bar fragmentbar = new bar();
+                fragmentTransaction.replace(android.R.id.content,fragmentbar).commit();
+            }else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_sitios))){
+                sitio fragmentsitio = new sitio();
+                fragmentTransaction.replace(android.R.id.content,fragmentsitio).commit();
+            }else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_demografia))){
+                demography fragmentdemography = new demography();
+                fragmentTransaction.replace(android.R.id.content,fragmentdemography).commit();
+            }else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_aboutus))){
+                about fragmentaboutus = new about();
+                fragmentTransaction.replace(android.R.id.content,fragmentaboutus).commit();
+            }
         }
 
         return rootView;

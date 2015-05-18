@@ -5,4 +5,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="tittles" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">0.05</item>
+    </style>
 </resources>

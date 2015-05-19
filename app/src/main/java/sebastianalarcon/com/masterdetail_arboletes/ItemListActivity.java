@@ -3,6 +3,7 @@ package sebastianalarcon.com.masterdetail_arboletes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.widget.Toast;
 
 import sebastianalarcon.com.masterdetail_arboletes.dummy.DummyContent;
 
@@ -37,13 +38,6 @@ public class ItemListActivity extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
 
-        if (DummyContent.ITEMS.isEmpty()) {
-            DummyContent.addItem(new DummyContent.DummyItem("1", getResources().getString(R.string.title_activity_aboutus)));
-            DummyContent.addItem(new DummyContent.DummyItem("2", getResources().getString(R.string.title_activity_demografia)));
-            DummyContent.addItem(new DummyContent.DummyItem("3", getResources().getString(R.string.title_activity_bares)));
-            DummyContent.addItem(new DummyContent.DummyItem("4", getResources().getString(R.string.title_activity_sitios)));
-            DummyContent.addItem(new DummyContent.DummyItem("5", getResources().getString(R.string.title_activity_hoteles)));
-        }
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
@@ -58,6 +52,18 @@ public class ItemListActivity extends FragmentActivity
                     .findFragmentById(R.id.item_list))
                     .setActivateOnItemClick(true);
         }
+
+        if (DummyContent.ITEMS.isEmpty()) {
+            DummyContent.addItem(new DummyContent.DummyItem("1", getResources().getString(R.string.title_activity_aboutus)));
+            DummyContent.addItem(new DummyContent.DummyItem("2", getResources().getString(R.string.title_activity_demografia)));
+            DummyContent.addItem(new DummyContent.DummyItem("3", getResources().getString(R.string.title_activity_bares)));
+            DummyContent.addItem(new DummyContent.DummyItem("4", getResources().getString(R.string.title_activity_sitios)));
+            DummyContent.addItem(new DummyContent.DummyItem("5", getResources().getString(R.string.title_activity_hoteles)));
+            DummyContent.addItem(new DummyContent.DummyItem("6", getResources().getString(R.string.main)));
+        }
+
+
+
 
         // TODO: If exposing deep links into your app, handle intents here.
     }
@@ -76,13 +82,43 @@ public class ItemListActivity extends FragmentActivity
             arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
             ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.item_detail_container, fragment)
-                    .commit();
+
+
+            Toast.makeText(getBaseContext(), "Entre",Toast.LENGTH_SHORT).show();
+
+            switch(id)
+            {
+                case "1":
+                    about fragmentabout = new about();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentabout).commit();
+                    break;
+                case "2":
+                    demography fragmentdemography = new demography();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentdemography).commit();
+                    break;
+                case "3":
+                    bar fragmentbar =new bar();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentbar).commit();
+                    break;
+                case "4":
+                    sitio fragmentsitio = new sitio();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentsitio).commit();
+                    break;
+                case "5":
+                    hotel fragmenthotel = new hotel();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmenthotel).commit();
+                    break;
+                case "6":
+                    main fragmentmain = new main();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentmain).commit();
+                    break;
+            }
 
         } else {
             // In single-pane mode, simply start the detail activity
             // for the selected item ID.
+            Toast.makeText(getBaseContext(), "Else",Toast.LENGTH_SHORT).show();
+
             Intent detailIntent = new Intent(this, ItemDetailActivity.class);
             detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);

@@ -9,6 +9,7 @@
     <string name="title_activity_aboutus">Acerca de nosotros</string>
     <string name="title_activity_sitios">Sitios</string>
     <string name="title_activity_demografia">Demografia</string>
+    <string name="title_activity_mapa">Mapa</string>
     <string name="main">Principal</string>
     <string name="aboutus">Aplicación para mostrar algunos lugares de Arbolestes. Desarrollada por Sebastián Alarcón Ortega</string>
     <string-array name="hoteles_array">

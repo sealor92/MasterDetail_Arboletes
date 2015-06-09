@@ -60,6 +60,7 @@ public class ItemListActivity extends FragmentActivity
             DummyContent.addItem(new DummyContent.DummyItem("4", getResources().getString(R.string.title_activity_sitios)));
             DummyContent.addItem(new DummyContent.DummyItem("5", getResources().getString(R.string.title_activity_hoteles)));
             DummyContent.addItem(new DummyContent.DummyItem("6", getResources().getString(R.string.main)));
+            DummyContent.addItem(new DummyContent.DummyItem("7", getResources().getString(R.string.title_activity_mapa)));
         }
 
 
@@ -90,27 +91,31 @@ public class ItemListActivity extends FragmentActivity
             {
                 case "1":
                     about fragmentabout = new about();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentabout).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentabout).commit();
                     break;
                 case "2":
                     demography fragmentdemography = new demography();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentdemography).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentdemography).commit();
                     break;
                 case "3":
                     bar fragmentbar =new bar();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentbar).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentbar).commit();
                     break;
                 case "4":
                     sitio fragmentsitio = new sitio();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentsitio).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentsitio).commit();
                     break;
                 case "5":
                     hotel fragmenthotel = new hotel();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmenthotel).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmenthotel).commit();
                     break;
                 case "6":
                     main fragmentmain = new main();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentmain).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container, fragmentmain).commit();
+                    break;
+                case "7":
+                    mapa fragmentmapa = new mapa();
+                    getFragmentManager().beginTransaction().replace(R.id.item_detail_container,fragmentmapa).commit();
                     break;
             }
 

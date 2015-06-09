@@ -9,6 +9,7 @@
     <string name="title_activity_aboutus">About Us</string>
     <string name="title_activity_sitios">Places</string>
     <string name="title_activity_demografia">Demography</string>
+    <string name="title_activity_mapa">Map</string>
     <string name="main">Main</string>
     <string name="aboutus">Application for show some Arboletes places. Development by Sebastián Alarcón Ortega</string>
     <string-array name="hoteles_array">

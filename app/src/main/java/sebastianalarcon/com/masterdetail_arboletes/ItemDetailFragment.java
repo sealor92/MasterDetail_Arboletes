@@ -1,9 +1,9 @@
 package sebastianalarcon.com.masterdetail_arboletes;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +77,10 @@ public class ItemDetailFragment extends Fragment {
             }else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_aboutus))){
                 about fragmentaboutus = new about();
                 fragmentTransaction.replace(android.R.id.content,fragmentaboutus).commit();
+            }
+            else if (mItem.item_name.equals(getResources().getString(R.string.title_activity_mapa))){
+                mapa fragmentmapa = new mapa();
+                fragmentTransaction.replace(android.R.id.content,fragmentmapa).commit();
             }
         }
 
